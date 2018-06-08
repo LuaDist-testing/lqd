@@ -1,16 +1,16 @@
 -- This file was automatically generated for the LuaDist project.
 
 package="lqd"
-version="20120420-1"
+version="20120430-1"
 -- LuaDist source
 source = {
-  tag = "20120420-1",
+  tag = "20120430-1",
   url = "git://github.com/LuaDist-testing/lqd.git"
 }
 -- Original source
 -- source = {
---    url = "http://www.tecgraf.puc-rio.br/~lhf/ftp/lua//5.2/lqd.tar.gz",
---    md5="087417cc7c64c7b432e1127dbf8c996a",
+--    url = "http://www.tecgraf.puc-rio.br/~lhf/ftp/lua//5.1/lqd.tar.gz",
+--    md5="2d4d1f6da1cfc3e675a1690ea2b7dccb",
 --    dir = "qd"
 -- }
 description = {
@@ -24,7 +24,7 @@ description = {
    license = "Public domain"
 }
 dependencies = {
-   "lua ~> 5.2"
+   "lua ~> 5.1"
 }
 
 external_dependencies = {

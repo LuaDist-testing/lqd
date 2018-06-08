@@ -1,8 +1,8 @@
 /*
 * lqd.c
-* high-precision mathematical library for Lua 5.2 based on qd
+* high-precision mathematical library for Lua 5.1 based on qd
 * Luiz Henrique de Figueiredo <lhf@tecgraf.puc-rio.br>
-* 20 Apr 2012 08:10:43
+* 30 Apr 2012 14:08:01
 * This code is hereby placed in the public domain.
 */
 
@@ -30,7 +30,8 @@ static int DIGITS=MAXDIGITS;
 static double *Pnew(lua_State *L)
 {
  double *x=lua_newuserdata(L,N*sizeof(double));
- luaL_setmetatable(L,MYTYPE);
+ luaL_getmetatable(L,MYTYPE);
+ lua_setmetatable(L,-2);
  return x;
 }
 
@@ -308,7 +309,8 @@ LUALIB_API int luaopen_qd(lua_State *L)
  unsigned int old_cw;
  fpu_fix_start(&old_cw);			/* may affect rest of app! */
  luaL_newmetatable(L,MYTYPE);
- luaL_setfuncs(L,R,0);
+ lua_setglobal(L,MYNAME);
+ luaL_register(L,MYNAME,R);
  lua_pushliteral(L,"version");			/** version */
  lua_pushliteral(L,MYVERSION);
  lua_settable(L,-3);

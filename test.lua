@@ -1,6 +1,6 @@
 -- test qd library
 
-local qd=require"qd"
+require"qd"
 
 ------------------------------------------------------------------------------
 print(qd.version)

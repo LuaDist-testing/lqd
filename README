@@ -1,4 +1,4 @@
-This is a high-precision mathematical library for Lua 5.2. It is based on
+This is a high-precision mathematical library for Lua 5.1. It is based on
 the qd library available at
 	http://crd.lbl.gov/~dhbailey/mpdist/
 	
