@@ -1,0 +1,38 @@
+This is a high-precision mathematical library for Lua 5.2. It is based on
+the qd library available at
+	http://crd.lbl.gov/~dhbailey/mpdist/
+	
+To try the library, edit Makefile to reflect your installation of Lua and
+qd. Then run make. This will build the library and run a simple test.
+For detailed installation instructions, see
+	http://www.tecgraf.puc-rio.br/~lhf/ftp/lua/install.html
+
+There is no manual but the library is simple and intuitive; see the summary
+below. Read also test.lua, which shows the library in action.
+
+This code is hereby placed in the public domain. Qd has its own license.
+Please send comments, suggestions, and bug reports to lhf@tecgraf.puc-rio.br .
+
+-------------------------------------------------------------------------------
+
+qd library:
+ __add(x,y) 		 atanh(x) 		 pow(x,y) 
+ __div(x,y) 		 ceil(x) 		 rand() 
+ __eq(x,y) 		 compare(x,y) 		 round(x) 
+ __lt(x,y) 		 cos(x) 		 sin(x) 
+ __mod(x,y) 		 cosh(x) 		 sincos(x) 
+ __mul(x,y) 		 digits([n]) 		 sincosh(x) 
+ __pow(x,y) 		 div(x,y) 		 sinh(x) 
+ __sub(x,y) 		 exp(x) 		 sqr(x) 
+ __tostring(x) 		 floor(x) 		 sqrt(x) 
+ __unm(x) 		 ipow(x,n) 		 sub(x,y) 
+ abs(x) 		 iroot(x,n) 		 tan(x) 
+ acos(x) 		 log(x) 		 tanh(x) 
+ acosh(x) 		 log10(x) 		 tonumber(x) 
+ add(x,y) 		 mod(x,y) 		 tostring(x,[n]) 
+ asin(x) 		 mul(x,y) 		 trunc(x) 
+ asinh(x) 		 neg(x) 		 type(x) 
+ atan(x) 		 number(x) 		 version 
+ atan2(y,x) 		 pi 
+
+-------------------------------------------------------------------------------
